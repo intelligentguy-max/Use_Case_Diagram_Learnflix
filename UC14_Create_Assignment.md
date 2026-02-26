@@ -17,18 +17,21 @@ Allows teachers to create assignments and coursework for students with specific 
 - Assignment availability and deadline settings are configured
 
 ## Main Flow
-1. Teacher accesses the course management section
-2. Teacher selects the course for which to create an assignment
-3. Teacher chooses to create a new assignment
-4. Teacher defines assignment details (title, description, instructions)
-5. Teacher sets assignment parameters (due date, submission format, etc.)
-6. Teacher specifies grading criteria and point value
-7. Teacher saves and publishes the assignment
-8. System stores the assignment and applies the settings
+| User Action | System Response |
+|-------------|-----------------|
+| Teacher accesses the course management section | System displays course management options |
+| Teacher selects the course for which to create an assignment | System loads course-specific options |
+| Teacher chooses to create a new assignment | System provides assignment creation interface |
+| Teacher defines assignment details (title, description, instructions) | System captures and validates assignment details |
+| Teacher sets assignment parameters (due date, submission format, etc.) | System processes parameter settings |
+| Teacher specifies grading criteria and point value | System stores grading information |
+| Teacher saves and publishes the assignment | System stores the assignment and applies the settings |
 
 ## Alternative Flows
-- **Template available**: Teacher can use existing assignment template
-- **Group assignment**: Teacher can configure for group submissions
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Template available | Teacher selects existing assignment template | System allows teacher to use existing template |
+| Group assignment | Teacher configures for group submissions | System adjusts assignment settings for group work |
 
 ## Exception Flows
 - System failure during creation: Error message displayed, partial data saved if possible

@@ -18,16 +18,19 @@ Allows students to access and download certificates upon successful completion o
 - Student can download or share the certificate
 
 ## Main Flow
-1. Student completes all course requirements
-2. System evaluates completion criteria and grade thresholds
-3. System generates certificate if requirements are met
-4. System notifies student about certificate availability
-5. Student accesses the certificate from their dashboard
-6. Student can download or share the certificate
+| User Action | System Response |
+|-------------|-----------------|
+| Student completes all course requirements | System evaluates completion criteria and grade thresholds |
+| | System generates certificate if requirements are met |
+| | System notifies student about certificate availability |
+| Student accesses the certificate from their dashboard | System displays the available certificate |
+| Student downloads or shares the certificate | System provides download/share options |
 
 ## Alternative Flows
-- **Requirements not met**: System continues to show incomplete status
-- **Certificate generation delayed**: System displays pending status
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Requirements not met | Student attempts to access certificate without meeting requirements | System continues to show incomplete status |
+| Certificate generation delayed | Student accesses certificate before generation | System displays pending status |
 
 ## Exception Flows
 - Certificate generation failure: Error handling and retry mechanism

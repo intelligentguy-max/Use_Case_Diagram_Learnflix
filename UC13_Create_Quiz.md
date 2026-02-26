@@ -17,18 +17,21 @@ Allows teachers to create quizzes and assessments for their courses with various
 - Quiz availability settings are configured
 
 ## Main Flow
-1. Teacher accesses the course management section
-2. Teacher selects the course for which to create a quiz
-3. Teacher chooses to create a new quiz
-4. Teacher configures quiz settings (time limit, attempts allowed, etc.)
-5. Teacher adds questions with correct answers and scoring
-6. Teacher sets quiz availability dates and conditions
-7. Teacher saves and publishes the quiz
-8. System stores the quiz and applies the settings
+| User Action | System Response |
+|-------------|-----------------|
+| Teacher accesses the course management section | System displays course management options |
+| Teacher selects the course for which to create a quiz | System loads course-specific options |
+| Teacher chooses to create a new quiz | System provides quiz creation interface |
+| Teacher configures quiz settings (time limit, attempts allowed, etc.) | System captures and validates settings |
+| Teacher adds questions with correct answers and scoring | System processes and stores questions |
+| Teacher sets quiz availability dates and conditions | System applies availability settings |
+| Teacher saves and publishes the quiz | System stores the quiz and applies the settings |
 
 ## Alternative Flows
-- **Insufficient permissions**: System displays permission error
-- **Question bank available**: Teacher can select from existing questions
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Insufficient permissions | Teacher attempts to create quiz without proper permissions | System displays permission error |
+| Question bank available | Teacher selects existing questions | System allows selection from question bank |
 
 ## Exception Flows
 - System failure during creation: Error message displayed, partial data saved if possible

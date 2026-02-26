@@ -16,15 +16,17 @@ Allows students to view and interact with course notes, either instructor-provid
 - System may track note access for analytics
 
 ## Main Flow
-1. Student navigates to the notes section of a course
-2. System displays available notes and resources
-3. Student selects specific notes to view
-4. System loads and displays the notes
-5. Student can interact with notes (search, highlight, etc.)
+| User Action | System Response |
+|-------------|-----------------|
+| Student navigates to the notes section of a course | System displays available notes and resources |
+| Student selects specific notes to view | System loads and displays the notes |
+| Student interacts with notes (search, highlight, etc.) | System enables interaction features |
 
 ## Alternative Flows
-- **Notes not available**: System displays appropriate message
-- **Student not enrolled**: System restricts access and provides enrollment information
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Notes not available | Student attempts to access unavailable notes | System displays appropriate message |
+| Student not enrolled | Student attempts to access notes of unenrolled course | System restricts access and provides enrollment information |
 
 ## Exception Flows
 - Note loading failure: Error message displayed

@@ -18,18 +18,20 @@ Allows students to submit assignments and coursework to the system for evaluatio
 - Assignment status is updated
 
 ## Main Flow
-1. Student navigates to the assignment section of a course
-2. System displays available assignments
-3. Student selects an assignment to submit
-4. Student uploads assignment files or completes online assignment
-5. Student submits the assignment
-6. System records the submission with timestamp
-7. System updates assignment status to submitted
+| User Action | System Response |
+|-------------|-----------------|
+| Student navigates to the assignment section of a course | System displays available assignments |
+| Student selects an assignment to submit | System provides submission interface |
+| Student uploads assignment files or completes online assignment | System validates file format and size |
+| Student submits the assignment | System records the submission with timestamp |
+| | System updates assignment status to submitted |
 
 ## Alternative Flows
-- **Deadline passed**: System displays message and prevents submission
-- **File size limit exceeded**: System displays error message
-- **Invalid file format**: System displays appropriate error
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Deadline passed | Student attempts to submit after deadline | System displays message and prevents submission |
+| File size limit exceeded | Student uploads oversized file | System displays error message |
+| Invalid file format | Student uploads unsupported file type | System displays appropriate error |
 
 ## Exception Flows
 - Upload failure: Error message displayed, opportunity to retry

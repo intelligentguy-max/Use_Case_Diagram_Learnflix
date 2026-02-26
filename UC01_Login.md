@@ -18,17 +18,21 @@ Allows registered users (Students, Teachers, and Admins) to authenticate and acc
 - Session is established for the user
 
 ## Main Flow
-1. User navigates to the login page
-2. User enters username/email and password
-3. System validates the credentials
-4. System authenticates the user
-5. System redirects user to the appropriate dashboard based on role
-6. Session is established
+| User Action | System Response |
+|-------------|-----------------|
+| User navigates to the login page | System displays the login interface |
+| User enters username/email and password | System captures the credentials |
+| User clicks the login button | System validates the credentials |
+| | System authenticates the user |
+| | System redirects user to the appropriate dashboard based on role |
+| | Session is established |
 
 ## Alternative Flows
-- **Invalid credentials**: System displays error message and prompts user to re-enter credentials
-- **Account locked/disabled**: System displays appropriate message
-- **Forgot password**: User can initiate password reset process
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Invalid credentials | User enters incorrect username/password | System displays error message and prompts user to re-enter credentials |
+| Account locked/disabled | User attempts to log in with locked account | System displays appropriate message |
+| Forgot password | User clicks "Forgot Password" link | System redirects user to password reset process |
 
 ## Exception Flows
 - System failure during authentication: Error message displayed

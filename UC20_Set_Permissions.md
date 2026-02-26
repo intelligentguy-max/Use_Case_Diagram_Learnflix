@@ -17,17 +17,20 @@ Allows administrators to configure and manage system permissions and access cont
 - Permission changes are logged in the system
 
 ## Main Flow
-1. Admin accesses the system administration section
-2. Admin selects the permission management interface
-3. Admin chooses to modify permissions for a specific role or user
-4. Admin configures access rights and permissions
-5. Admin saves the permission settings
-6. System applies the new permissions
-7. System updates access controls and logs the changes
+| User Action | System Response |
+|-------------|-----------------|
+| Admin accesses the system administration section | System displays administration options |
+| Admin selects the permission management interface | System provides permission management tools |
+| Admin chooses to modify permissions for a specific role or user | System loads current permissions for selected role/user |
+| Admin configures access rights and permissions | System captures and validates permission changes |
+| Admin saves the permission settings | System applies the new permissions |
+| | System updates access controls and logs the changes |
 
 ## Alternative Flows
-- **Role-based permissions**: Admin can set permissions for entire user roles
-- **Individual permissions**: Admin can override role permissions for specific users
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Role-based permissions | Admin sets permissions for entire user roles | System applies permissions to all users in selected role |
+| Individual permissions | Admin overrides role permissions for specific users | System applies individual permissions overriding role defaults |
 
 ## Exception Flows
 - System failure during permission update: Error message displayed, rollback if needed

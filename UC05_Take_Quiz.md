@@ -18,18 +18,19 @@ Allows students to participate in quizzes and assessments within courses.
 - Progress is updated in the system
 
 ## Main Flow
-1. Student navigates to the quiz section of a course
-2. System displays available quizzes
-3. Student selects a quiz to take
-4. System presents quiz questions to the student
-5. Student answers questions and submits the quiz
-6. System processes and saves the responses
-7. System calculates and displays the score (if immediately available)
+| User Action | System Response |
+|-------------|-----------------|
+| Student navigates to the quiz section of a course | System displays available quizzes |
+| Student selects a quiz to take | System presents quiz questions to the student |
+| Student answers questions and submits the quiz | System processes and saves the responses |
+| | System calculates and displays the score (if immediately available) |
 
 ## Alternative Flows
-- **Quiz not available**: System displays appropriate message
-- **Time limit exceeded**: System auto-submits or prevents submission
-- **Incomplete submission**: System prompts student to complete unanswered questions
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Quiz not available | Student attempts to access inactive quiz | System displays appropriate message |
+| Time limit exceeded | Student continues after time limit | System auto-submits or prevents submission |
+| Incomplete submission | Student attempts to submit without answering all questions | System prompts student to complete unanswered questions |
 
 ## Exception Flows
 - System failure during quiz: Responses saved automatically, error message displayed

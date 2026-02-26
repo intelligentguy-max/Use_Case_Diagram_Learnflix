@@ -17,16 +17,19 @@ Allows students to enroll in available courses based on prerequisites and availa
 - Enrollment is recorded in the system
 
 ## Main Flow
-1. Student browses available courses
-2. Student selects a course for enrollment
-3. System checks prerequisites and availability
-4. System processes enrollment request
-5. System confirms enrollment and updates student's course list
+| User Action | System Response |
+|-------------|-----------------|
+| Student browses available courses | System displays list of available courses |
+| Student selects a course for enrollment | System checks prerequisites and availability |
+| Student confirms enrollment request | System processes enrollment request |
+| | System confirms enrollment and updates student's course list |
 
 ## Alternative Flows
-- **Prerequisites not met**: System displays message and suggests alternative actions
-- **Course full**: System displays message and offers waitlist option if available
-- **Already enrolled**: System displays appropriate message
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Prerequisites not met | Student attempts to enroll without meeting prerequisites | System displays message and suggests alternative actions |
+| Course full | Student attempts to enroll in a full course | System displays message and offers waitlist option if available |
+| Already enrolled | Student attempts to enroll in an already enrolled course | System displays appropriate message |
 
 ## Exception Flows
 - System failure during enrollment: Transaction rolled back, error message displayed

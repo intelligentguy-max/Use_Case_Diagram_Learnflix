@@ -17,18 +17,21 @@ Allows teachers to communicate important information, updates, and announcements
 - Announcement is stored in course communication history
 
 ## Main Flow
-1. Teacher accesses the course management section
-2. Teacher selects the course for the announcement
-3. Teacher chooses to create a new announcement
-4. Teacher composes the announcement message
-5. Teacher sets visibility and timing preferences
-6. Teacher posts the announcement
-7. System distributes notification to enrolled students
-8. System stores the announcement in course communications
+| User Action | System Response |
+|-------------|-----------------|
+| Teacher accesses the course management section | System displays course management options |
+| Teacher selects the course for the announcement | System loads course-specific management interface |
+| Teacher chooses to create a new announcement | System provides announcement composition interface |
+| Teacher composes the announcement message | System captures and validates the message |
+| Teacher sets visibility and timing preferences | System applies visibility and timing settings |
+| Teacher posts the announcement | System distributes notification to enrolled students |
+| | System stores the announcement in course communications |
 
 ## Alternative Flows
-- **Scheduled announcement**: Teacher can schedule announcement for future posting
-- **Targeted announcement**: Teacher can target specific student groups
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Scheduled announcement | Teacher schedules announcement for future posting | System queues announcement for specified time |
+| Targeted announcement | Teacher targets specific student groups | System applies targeted distribution settings |
 
 ## Exception Flows
 - System failure during posting: Error message displayed

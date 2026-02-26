@@ -18,17 +18,20 @@ Allows teachers to review and grade student assignments with feedback and scores
 - Gradebook is updated with new scores
 
 ## Main Flow
-1. Teacher accesses the course management section
-2. Teacher selects the assignment to grade
-3. Teacher views list of student submissions
-4. Teacher reviews individual student submissions
-5. Teacher assigns grades and provides feedback
-6. Teacher saves grades for each submission
-7. System updates gradebook and notifies students of grades
+| User Action | System Response |
+|-------------|-----------------|
+| Teacher accesses the course management section | System displays course management options |
+| Teacher selects the assignment to grade | System loads assignment details and submissions |
+| Teacher views list of student submissions | System displays all submitted assignments |
+| Teacher reviews individual student submissions | System provides interface for reviewing submissions |
+| Teacher assigns grades and provides feedback | System captures grades and feedback |
+| Teacher saves grades for each submission | System updates gradebook and notifies students of grades |
 
 ## Alternative Flows
-- **Auto-grading available**: System may pre-grade objective questions
-- **Rubric available**: Teacher can use predefined grading rubric
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Auto-grading available | Teacher selects auto-grade option | System pre-grades objective questions |
+| Rubric available | Teacher selects grading rubric | System provides rubric-based grading interface |
 
 ## Exception Flows
 - System failure during grading: Error message displayed, grades saved if possible

@@ -17,16 +17,18 @@ Allows students to engage in course-related discussions and forums.
 - Engagement metrics are updated
 
 ## Main Flow
-1. Student navigates to the discussion forum of a course
-2. System displays discussion threads and topics
-3. Student selects a topic or creates a new thread
-4. Student posts a message or replies to existing posts
-5. System validates and stores the post
-6. System updates discussion activity and notifies relevant participants
+| User Action | System Response |
+|-------------|-----------------|
+| Student navigates to the discussion forum of a course | System displays discussion threads and topics |
+| Student selects a topic or creates a new thread | System provides interface for creating or viewing thread |
+| Student posts a message or replies to existing posts | System validates and stores the post |
+| | System updates discussion activity and notifies relevant participants |
 
 ## Alternative Flows
-- **Forum not active**: System displays appropriate message
-- **Restricted posting**: System enforces posting rules and restrictions
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Forum not active | Student attempts to access inactive forum | System displays appropriate message |
+| Restricted posting | Student attempts to post in restricted area | System enforces posting rules and restrictions |
 
 ## Exception Flows
 - Post submission failure: Error message displayed with retry option

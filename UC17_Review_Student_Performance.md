@@ -18,17 +18,21 @@ Allows teachers to evaluate overall student performance including grades, partic
 - Academic patterns may be identified
 
 ## Main Flow
-1. Teacher accesses the course management section
-2. Teacher selects the course to review student performance for
-3. System displays class performance overview
-4. Teacher can view individual student performance details
-5. Teacher analyzes performance metrics and identifies patterns
-6. Teacher can generate detailed performance reports
-7. Teacher can identify areas for instructional improvements
+| User Action | System Response |
+|-------------|-----------------|
+| Teacher accesses the course management section | System displays course management options |
+| Teacher selects the course to review student performance for | System loads performance data for the selected course |
+| | System displays class performance overview |
+| Teacher views individual student performance details | System provides detailed performance information for selected student |
+| Teacher analyzes performance metrics and identifies patterns | System displays visualizations and pattern analyses |
+| Teacher generates detailed performance reports | System creates and displays performance reports |
+| Teacher identifies areas for instructional improvements | System highlights areas needing attention |
 
 ## Alternative Flows
-- **Performance gaps identified**: System highlights areas needing attention
-- **High-performing students**: System identifies students for advanced opportunities
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Performance gaps identified | Teacher reviews highlighted performance gaps | System emphasizes areas needing attention |
+| High-performing students | Teacher identifies top performers | System highlights students for advanced opportunities |
 
 ## Exception Flows
 - Data retrieval failure: Error message displayed

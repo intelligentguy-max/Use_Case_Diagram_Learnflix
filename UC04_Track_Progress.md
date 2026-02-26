@@ -16,15 +16,18 @@ Allows students to monitor their learning progress within courses and overall ac
 - Progress data is updated and maintained
 
 ## Main Flow
-1. Student accesses the progress tracking dashboard
-2. System retrieves student's progress data
-3. System displays progress metrics (completion percentage, grades, etc.)
-4. Student can view detailed progress for specific courses
-5. System updates progress data in real-time as student completes activities
+| User Action | System Response |
+|-------------|-----------------|
+| Student accesses the progress tracking dashboard | System retrieves student's progress data |
+| | System displays progress metrics (completion percentage, grades, etc.) |
+| Student can view detailed progress for specific courses | System provides detailed course progress information |
+| Student completes activities | System updates progress data in real-time |
 
 ## Alternative Flows
-- **No courses enrolled**: System displays message suggesting course enrollment
-- **No progress data**: System displays appropriate message
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| No courses enrolled | Student attempts to view progress without enrolled courses | System displays message suggesting course enrollment |
+| No progress data | Student views progress before completing any activities | System displays appropriate message |
 
 ## Exception Flows
 - Data retrieval failure: Error message displayed

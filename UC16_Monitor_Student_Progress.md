@@ -18,16 +18,20 @@ Allows teachers to track and analyze the academic progress of students in their 
 - At-risk students may be identified
 
 ## Main Flow
-1. Teacher accesses the course management section
-2. Teacher selects the course to monitor student progress for
-3. System displays class progress overview
-4. Teacher can view individual student progress details
-5. Teacher analyzes progress metrics and identifies trends
-6. Teacher can export progress reports if needed
+| User Action | System Response |
+|-------------|-----------------|
+| Teacher accesses the course management section | System displays course management options |
+| Teacher selects the course to monitor student progress for | System loads progress data for the selected course |
+| | System displays class progress overview |
+| Teacher views individual student progress details | System provides detailed progress information for selected student |
+| Teacher analyzes progress metrics and identifies trends | System displays visualizations and trend analyses |
+| Teacher exports progress reports if needed | System generates and provides export options for reports |
 
 ## Alternative Flows
-- **At-risk students identified**: System highlights students needing intervention
-- **Comparative analysis**: Teacher can compare progress across different metrics
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| At-risk students identified | Teacher reviews highlighted students | System emphasizes students needing intervention |
+| Comparative analysis | Teacher compares progress across metrics | System displays comparative data visualization |
 
 ## Exception Flows
 - Data retrieval failure: Error message displayed

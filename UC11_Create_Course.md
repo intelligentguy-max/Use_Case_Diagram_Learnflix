@@ -17,17 +17,20 @@ Allows teachers to create new courses with structured content, syllabus, and lea
 - Course is available for student enrollment (if published)
 
 ## Main Flow
-1. Teacher accesses course management section
-2. Teacher selects option to create a new course
-3. Teacher fills in course details (title, description, objectives, etc.)
-4. Teacher sets course parameters (enrollment limits, prerequisites, etc.)
-5. Teacher adds initial content or syllabus
-6. Teacher saves and publishes the course
-7. System creates the course and makes it available according to settings
+| User Action | System Response |
+|-------------|-----------------|
+| Teacher accesses course management section | System displays course management options |
+| Teacher selects option to create a new course | System provides course creation interface |
+| Teacher fills in course details (title, description, objectives, etc.) | System validates and captures course information |
+| Teacher sets course parameters (enrollment limits, prerequisites, etc.) | System saves parameter settings |
+| Teacher adds initial content or syllabus | System stores content and syllabus information |
+| Teacher saves and publishes the course | System creates the course and makes it available according to settings |
 
 ## Alternative Flows
-- **Insufficient permissions**: System displays permission error
-- **Course already exists**: System alerts teacher of duplicate course
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| Insufficient permissions | Teacher attempts to create course without proper permissions | System displays permission error |
+| Course already exists | Teacher attempts to create a course with duplicate title | System alerts teacher of duplicate course |
 
 ## Exception Flows
 - System failure during creation: Error message displayed, partial data saved if possible
