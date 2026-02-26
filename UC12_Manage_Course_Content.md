@@ -1,0 +1,42 @@
+# UC12 - Manage Course Content
+
+## Use Case Description
+Allows teachers to organize, update, and maintain course materials including videos, documents, and other learning resources.
+
+## Actors
+- Teacher
+
+## Pre-conditions
+- User must be logged in as a Teacher
+- Teacher must have access rights to the specific course
+- Course must exist in the system
+
+## Post-conditions
+- Course content is updated according to teacher's changes
+- Changes are reflected for enrolled students
+- Content modification history is recorded
+
+## Main Flow
+| User Action | System Response |
+|-------------|-----------------|
+| Teacher accesses the course management section | System displays available courses for management |
+| Teacher selects a course to manage content for | System loads the course content structure |
+| Teacher views existing content structure | System displays current content organization |
+| Teacher adds, modifies, or removes content items | System processes content changes |
+| Teacher organizes content in desired sequence | System updates content organization |
+| Teacher saves changes | System updates content and notifies enrolled students of changes |
+
+## Alternative Flows
+| Condition | User Action | System Response |
+|-----------|-------------|-----------------|
+| No access rights | Teacher attempts to manage content without permission | System denies access and displays appropriate message |
+| Content in use | Teacher attempts to modify active content | System warns about potential impact on students |
+
+## Exception Flows
+- Upload failure: Error message displayed with retry option
+- System failure during update: Error handling with data integrity preservation
+
+## Business Rules
+- Content must meet quality and format standards
+- Changes to published content may require notifications to students
+- Version control may be maintained for major content changes
