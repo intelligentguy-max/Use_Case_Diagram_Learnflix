@@ -1,0 +1,39 @@
+@startuml
+left to right direction
+actor Student
+actor Teacher
+actor Admin
+
+rectangle "LearnFlix System" {
+  Student --> (Login)
+  Student --> (View Course Content)
+  Student --> (Enroll in Course)
+  Student --> (Track Progress)
+  Student --> (Take Quiz)
+  Student --> (Submit Assignment)
+  Student --> (Access Notes)
+  Student --> (Participate in Discussions)
+  Student --> (Receive Certificate)
+  Student --> (Use AI Assistant)
+  
+  Teacher --> (Login)
+  Teacher --> (Create Course)
+  Teacher --> (Manage Course Content)
+  Teacher --> (Create Quiz)
+  Teacher --> (Create Assignment)
+  Teacher --> (Grade Assignments)
+  Teacher --> (Monitor Student Progress)
+  Teacher --> (Review Student Performance)
+  Teacher --> (Post Announcements)
+  
+  Admin --> (Login)
+  Admin --> (Manage Users)
+  Admin --> (Set Permissions)
+  Admin --> (System Configuration)
+  Admin --> (Generate Analytics Reports)
+}
+
+note top of Student : Role: Learner accessing courses
+note top of Teacher : Role: Instructor managing courses
+note top of Admin : Role: System administrator
+@enduml
